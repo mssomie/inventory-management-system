@@ -1,5 +1,5 @@
 <?php require_once 'includes/header.php'; ?>
-<script src="https://unpkg.com/vue"></script>
+<script onload="allRecords()" src="https://unpkg.com/vue"></script>
 <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
 
 <div id='myapp'>
@@ -14,16 +14,16 @@
                 <div class="table-responsive">
                     <table class="table product-table text-center">
                     <div v-on:click="allRecords" class="table-bottom-wrapper">
-                        <!-- <list></list> -->
+                      
     <div class="table-coupon d-flex fix justify-content-start">
         
  
-        <select  v-model="bought.item" @change='allRecords()' id="productdrop"  >
-            
-            <option  v-for='product in products' :value='product.id' :key='product.id' @click="addProduct(product.id)" > {{product.name}}</option>
+        <select  v-model="bought.item"id="productdrop"  >
+            <option value=""> Select Product</option>
+            <option  v-for='product in products' :value='product.id' :key='product.id' @click="addProduct(product.id)" >{{product.brand}} {{product.name}}</option>
 
 </select>  
-<input v-model="bought.quantity" type="number" name="number">
+<input v-model="bought.quantity" type="number" name="number" placeholder="Enter Quantity">
 
         <button v-on:click='addToCart' >Add Product</button>
     </div>
@@ -82,21 +82,6 @@
         </div>
 </div>
 </div>
-        <!-- Cart Area End -->
-        <!-- Footer Area Start
-    <!-- <script src="https://unpkg.com/vue"></script>
-<div id="app">
-
-<div class="product-image">
-  <img src="" />
-</div>
-
-<div class="product-info">
-  <h1>{{ product + 'semester'}}</h1>
-  <p>{{ description }}</p>
-</div>
-  
-</div>  -->
-<!-- fetch products from database --> -->
+       
     <?php require_once 'includes/footer.php'; ?>
     <script src="sales.js"></script>
