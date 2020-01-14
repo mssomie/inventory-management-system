@@ -115,7 +115,7 @@
                         <div class="ht-main-menu">
                             <nav>
                                 <ul>
-                                    <li class="active"><a href="view_products.php">View Products </a>
+                                    <li class="active"><a href="products.php">View Products </a>
                                       
                                     </li>
                                     <li><a href="view_sales.php">Sales History</a>
@@ -141,35 +141,27 @@
                 <div class="mobile-menu container">
                     <nav id="mobile-menu-active">
                         <ul class="menu-overflow">
-                            <li><a href="index.html">HOME</a>
-                                <ul>
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index-2.html">Home Two</a></li>
-                                    <li><a href="index-3.html">Home Three</a></li>
-                                    <li><a href="index-4.html">Home Four</a></li>
-                                </ul>
+                            <li><a href="index.php">Dashboard</a>
+                               
                             </li>
-                            <li><a href="shop.html">Shop</a>
-                                <ul>
-                                    <li><a href="shop-full-width.html">shop full Width</a></li>
-                                    <li><a href="shop-right-sidebar.html">shop Right Sidebar</a></li>
-                                    <li><a href="wishlist.html">Wishlist Page</a></li>
-                                    <li><a href="cart.html">cart Page</a></li>
-                                    <li><a href="checkout.html">checkout Page</a></li>
-                                    <li><a href="product-details.html">Single Shop</a></li>
-                                </ul>
+                            <li><a href="make_sales.php">Make Sales</a>
+                              
                             </li>
-                            <li><a href="blog.html">Blog</a>
-                                <ul>
-                                    <li><a href="blog-2-column.html">blog 2 column</a></li>
-                                    <li><a href="blog-3-column.html">blog 3 column</a></li>
-                                    <li><a href="blog-left-sidebar.html">blog Left Sidebar</a></li>
-                                    <li><a href="blog-details.html">blog details</a></li>
-                                    <li><a href="blog-details-left-sidebar.html">blog details left Sidebar</a></li>
-                                </ul>
+                            <li><a href="add_received.php">Add Received</a>
+                                
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="404.html">404</a></li>
+                            <li><a href="add_products.php">Add Product</a>
+                                
+                            </li>
+                            <li><a href="view_products.php">View Products</a>
+                                
+                            </li>
+                            <li><a href="view_sales.php">Sales History</a>
+                                
+                            </li>
+                            <li><a href="view_received.php">Received History</a>
+                                
+                            </li>
                         </ul>
                     </nav>							
                 </div>
