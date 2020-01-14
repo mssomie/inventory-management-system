@@ -21,6 +21,7 @@ var app = new Vue({
       
       cart:[ ]
     },
+   
     computed:{
       VAT: function(){
         return(
@@ -119,6 +120,16 @@ var app = new Vue({
       }
     },
     created: function(){
+      axios.get('ajaxfile.php')
+      .then(function (response) {
+         app.products = response.data;
+         console.log(response.data);
+         
+         console.log('got here');
+      })
+      .catch(function (error) {
+         console.log(error);
+      });
       bought=JSON.parse(localStorage.getItem("bought"));
       this.bought= bought?bought:[]
       
